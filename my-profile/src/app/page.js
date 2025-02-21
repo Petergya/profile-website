@@ -7,7 +7,8 @@ import Welcome from "@/landingpage/welcome";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
+<>
     <Hero />
     <Welcome />
     <Products />
@@ -15,5 +16,7 @@ export default function Home() {
 
     
   </>
+    </div>
+    
   );
 }
