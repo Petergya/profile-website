@@ -3,7 +3,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
 
-    <div>
+    <div className="mt-8">
      <div className="">
       <Image 
         src="/images/contact1.jpg" 

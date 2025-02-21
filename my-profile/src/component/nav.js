@@ -2,15 +2,28 @@
 
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-red-800  p-4  fixed">
-      <div className="container flex items-center justify-center text-center gap-10">
+    <nav className="w-full bg-white  p-2  fixed">
+      <div className="container flex items-center justify-center text-center gap-64">
         <div>
  {/* Logo - Left Side */}
+ <div className="flex justify-center items-center gap-2">
+ <div className="">
+       <Image 
+         src="/images/logo.jpg" 
+         alt="Contact" 
+         width={20} 
+         height={20} 
+         className=" h-[]  object-cover" 
+       />
+     </div>
  <h1 className="text-xl font-bold  whitespace-nowrap">Company Name</h1>
 
+ </div>
+ 
         </div>
         
        
