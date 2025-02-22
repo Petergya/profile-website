@@ -6,7 +6,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
+<<<<<<< HEAD
     <nav className="w-full bg-white   p-2   fixed">
+=======
+    <nav className="w-full bg-white  p-2 py-8  fixed">
+>>>>>>> f9a814d0ea206f5d8ea23e504d3553e54bf410fd
       <div className="container flex items-center justify-center text-center gap-64">
         <div>
  {/* Logo - Left Side */}
