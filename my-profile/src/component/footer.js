@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="text-center md:text-left text-sm space-y-2">
             <p>METALLIZ GROUP (UK)</p>
             <p>27 Old Gloucester Street <br />WCIN 3AX</p>
-            <p><p>London, United Kingdom.</p></p>
+            <p>London, United Kingdom.</p>
             <p className="text-sm mt-2">
               Email:{" "}
               <a href="mailto:admin@richfieldgroup.co.uk" className="text-blue-600">
