@@ -20,7 +20,7 @@ const Navbar = () => {
          className=" h-[]  object-cover" 
        />
      </div>
- <h1 className="text-xs font-bold  whitespace-nowrap ">Company Name</h1>
+ <h1 className="text-xs font-bold  whitespace-nowrap ">METALLIZ GROUP (UK)</h1>
 
  </div>
  

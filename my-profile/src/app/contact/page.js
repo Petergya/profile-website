@@ -171,20 +171,20 @@ const Contact = () => {
                 United Kingdom
               </h3>
             </div>
-            <p className="text-sm mt-2">Richfield Group (UK) LLP</p>
-            <p className="text-sm">20-22 Wenlock Road,</p>
+            <p className="text-sm mt-2">27 Old Gloucester Street</p>
+            <p className="text-sm">WCIN 3AX</p>
             <p className="text-sm">London, United Kingdom.</p>
-            <p className="text-sm">N1 7UG</p>
+            {/* <p className="text-sm">N1 7UG</p> */}
             <p className="text-sm mt-2">
               Email:{" "}
               <a href="mailto:admin@richfieldgroup.co.uk" className="text-blue-600">
-                admin@richfieldgroup.co.uk
+              info@metallizgroup.uk
               </a>
             </p>
             <p className="text-sm">
               Tel:{" "}
               <a href="tel:+442076085500" className="text-blue-600">
-                +44(0) 0207 608 5500
+              Tel: +44(0) 204 571 4485 
               </a>
             </p>
           </div>
