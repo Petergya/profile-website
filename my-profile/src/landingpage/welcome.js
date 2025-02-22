@@ -3,7 +3,7 @@ import { LuHeartHandshake } from "react-icons/lu";
 const WelcomeSection = () => {
   return (
     <section className="w-full flex flex-col items-center text-center py-12 px-4">
-      <LuHeartHandshake className="text-4xl text-gray-700 mb-3" />
+      <LuHeartHandshake className="text-5xl text-gray-700 mb-3" />
       <h2 className="text-lg font-semibold text-gray-800">WELCOME</h2>
       <p className="text-gray-600 max-w-2xl mt-2">
         Suzee Alliance Group is an amiable trans-border supplier of select commodities of the finest grades.

@@ -4,14 +4,14 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const products = [
   {
     id: 1,
-    image: "/images/product1.jpg",
+    image: "/images/product4.jpg",
     title: "WHEAT (MILLING)",
     description:
       "The United States is the world’s leading wheat exporter. Although the U.S. produces only 10 percent of world wheat, it is consistently the world’s biggest wheat exporter.",
   },
   {
     id: 2,
-    image: "/images/product2.jpg",
+    image: "/images/product5.jpg",
     title: "SUGAR",
     description:
       "At present, the global production of sugar is in excess of 180 million tonnes annually, with more than one hundred countries producing sugar. The largest of them are Brazil, India, and China.",
@@ -25,14 +25,14 @@ const products = [
   },
   {
     id: 1,
-    image: "/images/product4.jpg",
-    title: "WHEAT (MILLING)",
+    image: "/images/product2.jpg",
+    title: "WHEAT (MILLING.)",
     description:
       "The United States is the world’s leading wheat exporter. Although the U.S. produces only 10 percent of world wheat, it is consistently the world’s biggest wheat exporter.",
   },
   {
     id: 2,
-    image: "/images/product5.jpg",
+    image: "/images/product1.jpg",
     title: "SUGAR",
     description:
       "At present, the global production of sugar is in excess of 180 million tonnes annually, with more than one hundred countries producing sugar. The largest of them are Brazil, India, and China.",
