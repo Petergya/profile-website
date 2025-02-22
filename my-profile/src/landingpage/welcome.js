@@ -6,10 +6,8 @@ const WelcomeSection = () => {
       <LuHeartHandshake className="text-5xl text-gray-700 mb-3" />
       <h2 className="text-lg font-semibold text-gray-800">WELCOME</h2>
       <p className="text-gray-600 max-w-2xl mt-2">
-        Suzee Alliance Group is an amiable trans-border supplier of select commodities of the finest grades.
-        We provide you with a choice array of Wheat (Milling), Wheat Flour, Sugar, Bitumen, CPO and RBD (Palm Oils).
-        As a measure of our commitment to quality assurance, our shipments are always backed by verifiable 
-        and confirmable SGS reports.
+      With  headquarters  in the vibrant commercial heart of the UK, <b>METALLIZ GROUP</b> is a multinational enterprise, expertly sourcing and supplying a precision-crafted portfolio of high-performance Strategic Raw Materials (SRMs). These specialized materials, are available in various forms, including oxides, ingots, nanoparticles, films and powders, meticulously tailored to cater to the stringent demands of innovators in pivotal sectors.
+      These minerals facilitate the production of advanced superconductors, powering next-generation technologies, in addition to the creation of bespoke alloys for the defense industries and rocket propulsion systems.
       </p>
     </section>
   );

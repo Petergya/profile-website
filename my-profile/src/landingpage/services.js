@@ -19,12 +19,11 @@ const ServiceSection = () => {
 
         {/* Right Content */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-xl font-bold">VALUE-ADDED SERVICES (FUNDING)</h3>
+          <h3 className="text-2xl font-bold ">Geological Asset/Resource Consultancy</h3>
           <p className="text-gray-600 mt-4 text-sm">
-            Often times in the world of commodity trade, there are up-coming firms and agents with genuine 
-            and valid purchase requests for bulk commodities, who deal directly with the end-buyer and desire 
-            to supply the commodities directly. However, they are hindered by their inability to raise the 
-            required payment instruments such as letter of credits.
+         <h1 className="font-semibold text-gray-800 ">-Unlocking Mining Potential with Cutting-Edge Technology* </h1><br></br>
+          In partnership with an EU-funded project, our Geological Asset/Resource Consultancy service offers a comprehensive solution for mining asset acquisition on a global scale. Fusing the power of Hyperspectral imaging and proprietor software, we provide reliable and accurate assessments of mineral resources. 
+
           </p>
           <p className="text-gray-600 mt-4 text-sm">
             Due to the availability of a world-class funding structure at our disposal, we possess the capability 
