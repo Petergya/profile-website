@@ -64,15 +64,15 @@ const Hero = () => {
   return (
     <div className="w-full h-[60vh] md:h-[95vh] bg-cover  transition-all duration-1000 overflow-hidden"
       style={{ backgroundImage: `url(${images[currentImage]})` }}>
-      {/* <div className=" inset-0 bg-black bg-opacity-30"></div>
+      <div className=" inset-0 bg-black bg-opacity-30"></div>
       <div className={`absolute top-1/2 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}>
-        <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
-          Distinctive Supplier
+        <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max ">
+        METALLIZ    
         </div>
         <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
-          of Premium Choice Produce
+        GROUP (UK)
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

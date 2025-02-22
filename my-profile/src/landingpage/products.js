@@ -5,50 +5,51 @@ const products = [
   {
     id: 1,
     image: "/images/product4.jpg",
-    title: "WHEAT (MILLING)",
+    title: "Tungsten",
     description:
-      "The United States is the world’s leading wheat exporter. Although the U.S. produces only 10 percent of world wheat, it is consistently the world’s biggest wheat exporter.",
+      "Tungsten is an extremely hard, dense metal used in aerospace, industrial manufacturing, and high-temperature applications. Its exceptional strength and high melting point make it ideal for rocket components, such as nozzles and heat shields, as well as wear-resistant parts. ",
   },
   {
     id: 2,
     image: "/images/product5.jpg",
-    title: "SUGAR",
+    title: "Beryllium",
     description:
-      "At present, the global production of sugar is in excess of 180 million tonnes annually, with more than one hundred countries producing sugar. The largest of them are Brazil, India, and China.",
+      "Beryllium is a versatile, ultra-lightweight metal with exceptional strength and unique nuclear properties. It is 30% lighter than aluminum and 5 times stronger than steel. Beryllium's high thermal conductivity makes it crucial for rocket engines and nuclear devices.",
   },
   {
     id: 3,
     image: "/images/product3.jpg",
-    title: "BITUMEN",
+    title: "Tantalum",
     description:
-      "We are a force to reckon with as a trans-national supplier of bitumen with the highest standards. We are always on stand-by to ship to any world port in new steel drums and/or bulk shipments.",
+      "Tantalum is a versatile, corrosion-resistant metal used in electronics, aerospace, and medical devices. Its unique properties make it essential for high-performance applications. Tantalum capacitors are used in electronic devices like smartphones and laptops. ",
   },
   {
     id: 1,
     image: "/images/product2.jpg",
-    title: "WHEAT (MILLING.)",
+    title: "Niobium",
     description:
-      "The United States is the world’s leading wheat exporter. Although the U.S. produces only 10 percent of world wheat, it is consistently the world’s biggest wheat exporter.",
+      "Niobium is a high-strength, low-alloy steel additive used in advanced energy and infrastructure projects. It's essential for renewable energy technologies like wind turbines and solar panels. Niobium's high strength-to-weight ratio makes it ideal for building critical infrastructure. ",
   },
   {
     id: 2,
     image: "/images/product1.jpg",
-    title: "SUGAR",
+    title: "Copper",
     description:
-      "At present, the global production of sugar is in excess of 180 million tonnes annually, with more than one hundred countries producing sugar. The largest of them are Brazil, India, and China.",
+      "Copper is a vital component in electric vehicles due to its excellent conductivity and ductility. Copper accounts for 7-10% of the total vehicle weight of electric vehicles. Global demand is guaranteed to surge with growing EV adoption, and the increasing need for electrification in construction projects. ",
   },
   {
     id: 3,
     image: "/images/product6.jpg",
-    title: "BITUMEN",
+    title: "Titanium Dioxide (TiO2)",
     description:
-      "We are a force to reckon with as a trans-national supplier of bitumen with the highest standards. We are always on stand-by to ship to any world port in new steel drums and/or bulk shipments.",
+      "Titanium Dioxide is a brilliant white pigment and photocatalyst, used in coatings, plastics, and solar energy applications. Its high refractive index makes it ideal for sunscreen and cosmetics. TiO2 is also used in water treatment and air purification systems. ",
   },
 ];
 
 const ProductSection = () => {
   return (
-    <div className="w-full py-12 bg-gray-100">
+    <div className="w-full py-12 bg-gray-100 items-center ">
+        <h1 className=" font-semibold text-gray-800 text-5xl text-center my-5 mb-5">Our portfolio of specialty minerals:</h1>
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between">
         <FaArrowLeft className="text-gray-500 text-2xl cursor-pointer hover:text-black transition" />
 
