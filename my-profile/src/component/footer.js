@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Section - Logo & Copyright */}
         <div className="flex justify-around items-center space-x-6 text-center md:text-left mb-6 md:mb-0">
           <Image src="/images/logo.jpg" alt="Suizze Allianz Group" width={80} height={80} />
-          {/* <p className="mt-2 text-sm">© Suizze Allianz Group. <br />All rights reserved.</p> */}
+          
           <div className="text-center md:text-left text-sm space-y-2">
             <p>METALLIZ GROUP (UK)</p>
             <p>27 Old Gloucester Street <br />WCIN 3AX</p>
