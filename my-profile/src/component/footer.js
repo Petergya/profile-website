@@ -1,13 +1,3 @@
-// const Footer = () => {
-//     return (
-//       <footer className="bg-gray-800  text-center p-32 ">
-//         <p>© {new Date().getFullYear()} Company Name. All rights reserved.</p>
-//       </footer>
-//     );
-//   };
-  
-//   export default Footer;
-
 
 import Image from "next/image";
 
@@ -17,8 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-32 flex flex-col md:flex-row justify-around items-center md:items-start">
         
         {/* Left Section - Logo & Copyright */}
-        <div className="text-center md:text-left mb-6 md:mb-0">
-          <Image src="/images/logo.png" alt="Suizze Allianz Group" width={150} height={50} />
+        <div className="flex justify-around items-center space-x-2 text-center md:text-left mb-6 md:mb-0">
+          <Image src="/images/logo.jpg" alt="Suizze Allianz Group" width={30} height={20} />
           <p className="mt-2 text-sm">© Suizze Allianz Group. <br />All rights reserved.</p>
         </div>
 

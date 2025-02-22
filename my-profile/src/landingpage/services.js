@@ -1,6 +1,6 @@
 export default function service () {
     return (
-        <div>
+        <div className="">
             <h1>Service</h1>
         </div>
     )

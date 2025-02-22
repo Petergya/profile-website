@@ -1,6 +1,6 @@
 export default function products () {
     return (
-        <div>
+        <div className="">
             <h1 className="">Products</h1>
         </div>
     )
