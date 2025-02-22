@@ -26,7 +26,7 @@ const products = [
   {
     id: 1,
     image: "/images/product2.jpg",
-    title: "WHEAT (MILLING)",
+    title: "WHEAT (MILLING.)",
     description:
       "The United States is the world’s leading wheat exporter. Although the U.S. produces only 10 percent of world wheat, it is consistently the world’s biggest wheat exporter.",
   },
