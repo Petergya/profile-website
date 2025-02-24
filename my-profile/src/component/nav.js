@@ -16,14 +16,16 @@ const Navbar = () => {
  {/* Logo - Left Side */}
  <div className="flex justify-center items-center gap-2">
  <div className="">
-       <Image 
-         src="/images/logo.jpg" 
-         alt="Contact" 
-         width={50} 
-         height={50} 
-         className=" h-[]  object-cover" 
-       />
-     </div>
+      <Link href="/landing">
+        <Image 
+          src="/images/logo.jpg" 
+          alt="Logo" 
+          width={50} 
+          height={50} 
+          className="h-auto object-cover cursor-pointer" 
+        />
+      </Link>
+    </div>
  <h1 className="text-2xl font-bold  whitespace-nowrap ">METALLIZ GROUP (UK)</h1>
 
  </div>
