@@ -19,18 +19,19 @@ const ServiceSection = () => {
 
         {/* Right Content */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-2xl font-bold ">Geological Asset/Resource Consultancy</h3>
-          <p className="text-gray-600  text-sm">
+          <h3 className="text-2xl font-bold ">Geological Asset + Resource Consultancy</h3>
+          <h1 className="font-semibold text-gray-800 mt-4 ">Unlocking Global Critical Mineral Solutions </h1>
+          <p className="text-gray-600  ">
          In partnership with an EU-funded project, our Geological Asset/Resource Consultancy 
           service offers a comprehensive solution for mining asset acquisition on a global scale. 
           Fusing the power of Hyperspectral imaging and proprietor software, we provide reliable 
           and accurate assessments of mineral resources. 
           </p>
-          <h1 className="font-semibold text-gray-800 mt-4 ">-Unlocking Mining Potential with Cutting-Edge Technology* </h1>
-          <p className="text-gray-600  text-sm">
+      
+          {/* <p className="text-gray-600  ">
             Due to the availability of a world-class funding structure at our disposal, we possess the capability 
             to supply choice commodities to our customers across four continents without many hassles on their part.
-          </p>
+          </p> */}
           <button className=" flex items-center text-gray-500 bg-gray-200 p-2 mt-2 font-semibold hover:underline">
             READ MORE <FaArrowRight className="ml-2 text-xs text-red-500" />
           </button>

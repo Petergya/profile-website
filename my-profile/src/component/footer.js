@@ -11,7 +11,7 @@ const Footer = () => {
           <Image src="/images/logo.jpg" alt="Suizze Allianz Group" width={80} height={80} />
           
           <div className="text-center md:text-left text-sm space-y-2">
-            <p>METALLIZ GROUP (UK)</p>
+            <p className="font-extrabold">METALLIZ GROUP (UK)</p>
             <p>27 Old Gloucester Street <br />WCIN 3AX</p>
             <p>London, United Kingdom.</p>
             <p className="text-sm mt-2">
@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* Center Section - Navigation Links */}
         <div className="flex flex-col space-y-2 text-center md:text-left">
-          <a href="#" className="hover:text-gray-400">PRODUCTS</a>
+          <a href="#" className="hover:text-gray-400 font-bold">PRODUCTS</a>
           <a href="#" className="hover:text-gray-400">BERYLLIUM</a>
           <a href="#" className="hover:text-gray-400">TANTALUM</a>
           <a href="#" className="hover:text-gray-400">NIOBIUM</a>
@@ -43,12 +43,12 @@ const Footer = () => {
 
        
          <div className="flex flex-col space-y-2 text-center md:text-left">
-          <a href="#" className="hover:text-gray-400">NAVIGATION</a>
-          <a href="#" className="hover:text-gray-400">Home</a>
-          <a href="#" className="hover:text-gray-400">Products</a>
-          <a href="#" className="hover:text-gray-400">Services</a>
-          <a href="#" className="hover:text-gray-400">About Us</a>
-          <a href="#" className="hover:text-gray-400">Contact</a>
+          <a href="#" className="hover:text-gray-400 font-bold">NAVIGATION</a>
+          <a href="#" className="hover:text-gray-400">HMOE</a>
+          <a href="#" className="hover:text-gray-400">PRODUCTS</a>
+          <a href="#" className="hover:text-gray-400">SERVICES</a>
+          <a href="#" className="hover:text-gray-400">ABOUT US</a>
+          <a href="#" className="hover:text-gray-400">CONTACT</a>
           
         </div>
       </div>
