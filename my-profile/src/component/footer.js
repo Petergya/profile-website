@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-sm mt-2">
               Email:{" "}
               <a href="mailto:admin@richfieldgroup.co.uk" className="text-blue-600">
-              info@metallizgroup.uk
+              enquiries@metallizgroup.uk
               </a>
             </p>
             <p className="text-sm">

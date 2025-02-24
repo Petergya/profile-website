@@ -9,7 +9,7 @@ const ServiceSection = () => {
         {/* Left Image */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/handshake.jpg"
+            src="/images/service.jpg"
             alt="Business handshake"
             width={600}
             height={300}
@@ -20,16 +20,18 @@ const ServiceSection = () => {
         {/* Right Content */}
         <div className="w-full md:w-1/2">
           <h3 className="text-2xl font-bold ">Geological Asset/Resource Consultancy</h3>
-          <p className="text-gray-600 mt-4 text-sm">
-         <h1 className="font-semibold text-gray-800 ">-Unlocking Mining Potential with Cutting-Edge Technology* </h1><br></br>
-          In partnership with an EU-funded project, our Geological Asset/Resource Consultancy service offers a comprehensive solution for mining asset acquisition on a global scale. Fusing the power of Hyperspectral imaging and proprietor software, we provide reliable and accurate assessments of mineral resources. 
-
+          <p className="text-gray-600  text-sm">
+         In partnership with an EU-funded project, our Geological Asset/Resource Consultancy 
+          service offers a comprehensive solution for mining asset acquisition on a global scale. 
+          Fusing the power of Hyperspectral imaging and proprietor software, we provide reliable 
+          and accurate assessments of mineral resources. 
           </p>
-          <p className="text-gray-600 mt-4 text-sm">
+          <h1 className="font-semibold text-gray-800 mt-4 ">-Unlocking Mining Potential with Cutting-Edge Technology* </h1>
+          <p className="text-gray-600  text-sm">
             Due to the availability of a world-class funding structure at our disposal, we possess the capability 
             to supply choice commodities to our customers across four continents without many hassles on their part.
           </p>
-          <button className="mt-6 flex items-center text-gray-500 bg-gray-200 p-2 font-semibold hover:underline">
+          <button className=" flex items-center text-gray-500 bg-gray-200 p-2 mt-2 font-semibold hover:underline">
             READ MORE <FaArrowRight className="ml-2 text-xs text-red-500" />
           </button>
         </div>

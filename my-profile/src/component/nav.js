@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
 
-    <nav className="w-full bg-white   p-2   fixed">
+    <nav className="w-full bg-white  top-0 left-0 right-0 z-50 p-2   fixed">
 
     
 
@@ -19,12 +19,12 @@ const Navbar = () => {
        <Image 
          src="/images/logo.jpg" 
          alt="Contact" 
-         width={20} 
-         height={20} 
+         width={50} 
+         height={50} 
          className=" h-[]  object-cover" 
        />
      </div>
- <h1 className="text-xs font-bold  whitespace-nowrap ">METALLIZ GROUP (UK)</h1>
+ <h1 className="text-2xl font-bold  whitespace-nowrap ">METALLIZ GROUP (UK)</h1>
 
  </div>
  
@@ -40,7 +40,7 @@ const Navbar = () => {
         href="/"
         className="relative font-semibold text-black hover:text-blue-900 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-blue-900 before:transition-all before:duration-300 hover:before:w-full"
       >
-        Home
+        HOME
       </Link>
     </li>
     <li>
@@ -48,7 +48,7 @@ const Navbar = () => {
         href="/products"
         className="relative font-semibold text-black hover:text-blue-900 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-blue-900 before:transition-all before:duration-300 hover:before:w-full"
       >
-        Products
+        PRODUCTS
       </Link>
     </li>
     <li>
@@ -56,7 +56,7 @@ const Navbar = () => {
         href="/service"
         className="relative font-semibold text-black hover:text-blue-900 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-blue-900 before:transition-all before:duration-300 hover:before:w-full"
       >
-        Service
+        SERVICES
       </Link>
     </li>
     <li>
@@ -64,7 +64,7 @@ const Navbar = () => {
         href="/about"
         className="relative font-semibold text-black hover:text-blue-900 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-blue-900 before:transition-all before:duration-300 hover:before:w-full"
       >
-        About
+        ABOUT
       </Link>
     </li>
     <li>
@@ -72,7 +72,7 @@ const Navbar = () => {
         href="/contact"
         className="relative font-semibold text-black hover:text-blue-900 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-blue-900 before:transition-all before:duration-300 hover:before:w-full"
       >
-        Contact
+        CONTACT
       </Link>
     </li>
   </ul>
