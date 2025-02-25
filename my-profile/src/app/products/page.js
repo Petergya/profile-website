@@ -27,36 +27,35 @@ const texts = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState("opacity-0 translate-y-10");
+  const [animate, setAnimate] = useState("opacity-0 translate-x-full");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimate("opacity-0 translate-y-10"); // Reset animation
+      setAnimate("opacity-0 translate-x-full");
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
-        setAnimate("opacity-100 translate-y-0");
+        setAnimate("opacity-100 translate-x-0");
       }, 500);
-    }, 4000); // Change every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div
-      className="w-full h-[70vh] md:h-[95vh] bg-cover bg-center flex items-center justify-center text-center transition-all duration-1000 overflow-hidden relative"
+      className="w-full h-[60vh] md:h-[95vh] bg-cover mt-20 transition-all duration-1000 overflow-hidden"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div
-        className={`relative z-10 bg-white bg-opacity-20 backdrop-blur-sm p-8 rounded-lg text-white shadow-lg transition-all duration-1000 ${animate}`}
+        className={`absolute top-3/4 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
       >
-        <h1 className="bg-red-600 text-white px-6 py-2 text-lg font-bold inline-block rounded-md">
+        <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
           {texts[currentIndex].title}
-        </h1>
-        <h2 className="bg-black text-white px-6 py-2 text-xl mt-2 inline-block rounded-md">
+        </div>
+        <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
           {texts[currentIndex].subtitle}
-        </h2>
-        <p className="text-white w-full max-w-lg font-medium text-lg mt-3">
+        </div>
+        <p className="text-white w-80 font-semibold text-lg mt-2">
           {texts[currentIndex].description}
         </p>
       </div>
@@ -105,7 +104,7 @@ const newsData = [
 
 const NewsCard = ({ title, description, category, image }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden \">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden ">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full uppercase">
@@ -129,7 +128,7 @@ const NewsSection = () => {
           Discover the newest products, trends, and innovations to enhance your everyday life.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 md:mx-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {newsData.map((news, index) => (
           <NewsCard key={index} {...news} />
         ))}
