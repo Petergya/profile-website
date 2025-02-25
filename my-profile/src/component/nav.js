@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> d0678bd3a55aa47d9fefab273c762bb374961e0a
 import Link from "next/link";
 import Image from "next/image";
 
@@ -86,4 +89,9 @@ const Navbar = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+
+>>>>>>> d0678bd3a55aa47d9fefab273c762bb374961e0a

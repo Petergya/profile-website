@@ -27,7 +27,11 @@ const texts = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+<<<<<<< HEAD
   const [animate, setAnimate] = useState("opacity-100 translate-x-0"); 
+=======
+  const [animate, setAnimate] = useState("opacity-0 translate-x-full");
+>>>>>>> d0678bd3a55aa47d9fefab273c762bb374961e0a
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -47,11 +51,19 @@ const Hero = () => {
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
       {/* Overlay */}
+<<<<<<< HEAD
       <div className="absolute inset-0 bg-black/50 bg-opacity-40"></div>
 
       {/* Hero Text */}
       <div
         className={` absolute top-3/4 left-20 transform -translate-y-1/2 transition-all shadow-xl   duration-1000 ${animate}`}
+=======
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      {/* Hero Text */}
+      <div
+        className={`absolute top-3/4 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
+>>>>>>> d0678bd3a55aa47d9fefab273c762bb374961e0a
       >
         <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
           {texts[currentIndex].title}
