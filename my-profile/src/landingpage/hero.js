@@ -47,7 +47,6 @@
 
 
 "use client";
-
 import React, { useState, useEffect } from "react";
 
 const images = [
@@ -76,36 +75,39 @@ const texts = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState("opacity-0 translate-y-10");
+  const [animate, setAnimate] = useState("opacity-0 translate-x-full");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimate("opacity-0 translate-y-10"); // Reset animation
+      setAnimate("opacity-0 translate-x-full");
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % images.length);
-        setAnimate("opacity-100 translate-y-0");
+        setAnimate("opacity-100 translate-x-0");
       }, 500);
-    }, 4000); // Change every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div
-      className="w-full h-[70vh] md:h-[95vh] bg-cover bg-center flex items-center justify-center text-center transition-all duration-1000 overflow-hidden relative"
+      className="w-full h-[60vh] md:h-[95vh] bg-cover mt-20 transition-all duration-1000 overflow-hidden relative"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      {/* Hero Text */}
       <div
-        className={`relative z-10 bg-white bg-opacity-20 backdrop-blur-sm p-8 rounded-lg text-white shadow-lg transition-all duration-1000 ${animate}`}
+        className={`absolute top-3/4 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
       >
-        <h1 className="bg-red-600 text-white px-6 py-2 text-lg font-bold inline-block rounded-md">
+        <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
           {texts[currentIndex].title}
-        </h1>
-        <h2 className="bg-black text-white px-6 py-2 text-xl mt-2 inline-block rounded-md">
+        </div>
+        <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
           {texts[currentIndex].subtitle}
-        </h2>
-        <p className="text-white w-full max-w-lg font-medium text-lg mt-3">
+        </div>
+        <p className="text-white w-80 font-semibold text-lg mt-2">
           {texts[currentIndex].description}
         </p>
       </div>
