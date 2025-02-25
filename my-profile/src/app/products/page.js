@@ -1,150 +1,93 @@
-"use client";
-import React, { useState, useEffect } from "react";
 
-const images = [
-  "/images/hero1.jpg",
-  "/images/hero2.jpg",
-  "/images/hero3.jpg"
-];
 
-const texts = [
+
+import Image from "next/image";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Hero from "@/landingpage/hero"
+
+const products = [
   {
-    title: "Discover Our Latest Innovations",
-    subtitle: "Cutting-Edge Products for Every Need",
-    description: "Browse our collection of top-quality, high-performance products designed to elevate your experience."
+    id: 1,
+    image: "/images/product4.jpg",
+    title: "Tungsten",
+    description:
+      "Tungsten is an extremely hard, dense metal used in aerospace, industrial manufacturing, and high-temperature applications. Its exceptional strength and high melting point make it ideal for rocket components, such as nozzles and heat shields, as well as wear-resistant parts. ",
   },
   {
-    title: "Upgrade Your Lifestyle",
-    subtitle: "Smart Solutions for Modern Living",
-    description: "Experience efficiency and convenience with our range of advanced, user-friendly products."
+    id: 2,
+    image: "/images/product5.jpg",
+    title: "Beryllium",
+    description:
+      "Beryllium is a versatile, ultra-lightweight metal with exceptional strength and unique nuclear properties. It is 30% lighter than aluminum and 5 times stronger than steel. Beryllium's high thermal conductivity makes it crucial for rocket engines and nuclear devices.",
   },
   {
-    title: "Quality You Can Trust",
-    subtitle: "Durable, Reliable, and Affordable",
-    description: "Shop with confidence knowing our products are built to last and exceed your expectations."
-  }
-];
-
-const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState("opacity-0 translate-y-10");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimate("opacity-0 translate-y-10"); // Reset animation
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % images.length);
-        setAnimate("opacity-100 translate-y-0");
-      }, 500);
-    }, 4000); // Change every 4 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div
-      className="w-full h-[70vh] md:h-[95vh] bg-cover bg-center flex items-center justify-center text-center transition-all duration-1000 overflow-hidden relative"
-      style={{ backgroundImage: `url(${images[currentIndex]})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div
-        className={`relative z-10 bg-white bg-opacity-20 backdrop-blur-sm p-8 rounded-lg text-white shadow-lg transition-all duration-1000 ${animate}`}
-      >
-        <h1 className="bg-red-600 text-white px-6 py-2 text-lg font-bold inline-block rounded-md">
-          {texts[currentIndex].title}
-        </h1>
-        <h2 className="bg-black text-white px-6 py-2 text-xl mt-2 inline-block rounded-md">
-          {texts[currentIndex].subtitle}
-        </h2>
-        <p className="text-white w-full max-w-lg font-medium text-lg mt-3">
-          {texts[currentIndex].description}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const newsData = [
-  {
-    title: "Top 10 Must-Have Tech Gadgets of the Year",
-    description: "Explore the latest and greatest in technology that you need in your life today.",
-    category: "Electronics",
-    image: "images/product5.jpg",
+    id: 3,
+    image: "/images/product3.jpg",
+    title: "Tantalum",
+    description:
+      "Tantalum is a versatile, corrosion-resistant metal used in electronics, aerospace, and medical devices. Its unique properties make it essential for high-performance applications. Tantalum capacitors are used in electronic devices like smartphones and laptops. ",
   },
   {
-    title: "Smart Home Essentials: The Future is Here",
-    description: "Upgrade your home with smart devices that bring convenience and efficiency.",
-    category: "Home Tech",
-    image: "images/product1.jpg",
+    id: 1,
+    image: "/images/product2.jpg",
+    title: "Niobium",
+    description:
+      "Niobium is a high-strength, low-alloy steel additive used in advanced energy and infrastructure projects. It's essential for renewable energy technologies like wind turbines and solar panels. Niobium's high strength-to-weight ratio makes it ideal for building critical infrastructure. ",
   },
   {
-    title: "Best Fitness Gear to Keep You on Track",
-    description: "Discover high-performance products designed for your active lifestyle.",
-    category: "Health & Fitness",
-    image: "images/product2.jpg",
+    id: 2,
+    image: "/images/product1.jpg",
+    title: "Copper",
+    description:
+      "Copper is a vital component in electric vehicles due to its excellent conductivity and ductility. Copper accounts for 7-10% of the total vehicle weight of electric vehicles. Global demand is guaranteed to surge with growing EV adoption, and the increasing need for electrification in construction projects. ",
   },
   {
-    title: "Gaming Accessories That Will Change Your Experience",
-    description: "Enhance your gaming setup with top-tier accessories and peripherals.",
-    category: "Gaming",
-    image: "images/product3.jpg",
-  },
-  {
-    title: "Eco-Friendly Products for a Sustainable Future",
-    description: "Find innovative and environmentally-friendly products that make a difference.",
-    category: "Sustainability",
-    image: "images/product4.jpg",
-  },
-  {
-    title: "Must-Have Office Gadgets for Productivity",
-    description: "Boost efficiency and comfort with these essential office products.",
-    category: "Office Tech",
-    image: "images/product6.jpg",
+    id: 3,
+    image: "/images/product6.jpg",
+    title: "Titanium Dioxide (TiO2)",
+    description:
+      "Titanium Dioxide is a brilliant white pigment and photocatalyst, used in coatings, plastics, and solar energy applications. Its high refractive index makes it ideal for sunscreen and cosmetics. TiO2 is also used in water treatment and air purification systems. ",
   },
 ];
 
-const NewsCard = ({ title, description, category, image }) => {
-  return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden \">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full uppercase">
-          {category}
-        </span>
-        <h3 className="text-lg font-semibold mt-2">{title}</h3>
-        <p className="text-gray-600 text-sm mt-1">{description}</p>
-      </div>
-    </div>
-  );
-};
-
-const NewsSection = () => {
-  return (
-    <section className="py-12 px-6 bg-gray-100 mt-12">
-      <div className="text-center max-w-2xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900">
-          Latest <span className="text-red-600">Products</span>
-        </h2>
-        <p className="text-gray-600 mt-2 text-lg">
-          Discover the newest products, trends, and innovations to enhance your everyday life.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 md:mx-12">
-        {newsData.map((news, index) => (
-          <NewsCard key={index} {...news} />
-        ))}
-      </div>
-    </section>
-  );
-};
-
-const HomePage = () => {
+const ProductSection = () => {
   return (
     <div>
-      <Hero />
-      <NewsSection />
+       <Hero />
+    <div className="w-full py-12 bg-gray-100 items-center ">
+        <h1 className=" font-semibold text-gray-800 text-3xl text-center my-5 mb-5">Our portfolio of specialty minerals:</h1>
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between">
+        <FaArrowLeft className="text-gray-500 text-2xl cursor-pointer hover:text-black transition" />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  {products.map((product, index) => (
+    <div key={`${product.id}-${index}`} className="bg-white shadow-lg p-4">
+      <Image
+        src={product.image}
+        alt={product.title}
+        width={300}
+        height={200}
+        className="w-full object-cover"
+      />
+      <h3 className="text-lg font-bold mt-4">{product.title}</h3>
+      <p className="text-gray-600 mt-2 text-sm">{product.description}</p>
+      <button className="mt-4 flex p-2 bg-gray-200 items-center text-gray-500 font-semibold hover:underline">
+        READ MORE <FaArrowRight className="ml-2 text-xs text-red-500" />
+      </button>
     </div>
+  ))}
+</div>
+
+
+        <FaArrowRight className="text-gray-500 text-2xl cursor-pointer hover:text-black transition" />
+      </div>
+    </div>
+    </div>
+   
   );
 };
 
-export default HomePage;
+
+
+
+export default ProductSection;
