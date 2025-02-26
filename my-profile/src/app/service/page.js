@@ -31,7 +31,7 @@ export default function ServiceSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 10000); 
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 
@@ -46,7 +46,7 @@ export default function ServiceSection() {
         </p>
       </motion.div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <motion.div initial="hidden" animate="visible" variants={containerVariants} className="grid grid-cols-2 col-span-3 gap-6">
+        <motion.div initial="hidden" animate="visible" variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 col-span-3 gap-6">
           {services.map((service, index) => (
             <motion.div 
               key={index} 
@@ -61,13 +61,13 @@ export default function ServiceSection() {
             </motion.div>
           ))}
         </motion.div>
-        <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="relative col-span-1">
+        <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} className="relative col-span-1 sm:col-span-2 md:col-span-1">
           <motion.div
             key={currentImage}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 5 }} 
-            className="absolute inset-0"
+            transition={{ duration: 5 }}
+            className="relative w-full h-80 sm:h-96 md:h-full"
           >
             <Image
               src={images[currentImage]}
@@ -82,8 +82,5 @@ export default function ServiceSection() {
     </section>
   );
 }
-
-
-
 
 
