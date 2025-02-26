@@ -5,9 +5,9 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/images/hero1.jpg",
-  "/images/hero2.jpg",
-  "/images/hero3.jpg"
+  "/images/heroservice.jpg",
+  "/images/heroservice1.jpg",
+  
 ];
 
 const texts = [
@@ -28,7 +28,7 @@ const texts = [
   }
 ];
 
-const Hero = () => {
+const Heroservice = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState("opacity-100 translate-x-0"); // Make text visible initially
 
@@ -70,5 +70,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
-
+export default Heroservice;
