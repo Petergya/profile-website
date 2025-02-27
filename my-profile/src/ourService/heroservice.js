@@ -52,7 +52,7 @@ const Heroservice = () => {
      
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 bg-opacity-60"></div>
+      <div className="absolute inset-0  bg-opacity-60"></div>
 
       {/* Hero Text */}
       <div

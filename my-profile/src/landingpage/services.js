@@ -28,10 +28,7 @@ const ServiceSection = () => {
           and accurate assessments of mineral resources. 
           </p>
       
-          {/* <p className="text-gray-600  ">
-            Due to the availability of a world-class funding structure at our disposal, we possess the capability 
-            to supply choice commodities to our customers across four continents without many hassles on their part.
-          </p> */}
+         
           <button className=" flex items-center text-gray-500 bg-gray-200 p-2 mt-2 font-semibold hover:underline">
             READ MORE <FaArrowRight className="ml-2 text-xs text-red-500" />
           </button>

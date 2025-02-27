@@ -5,8 +5,8 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/images/heroimage1.jpg",
-  "/images/hero2.jpg",
+  "/images/herro.jpg",
+  "/images/herrro.jpg",
   "/images/hero3.jpg"
 ];
 
@@ -50,7 +50,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 bg-opacity-100"></div>
+      <div className="absolute inset-0  bg-opacity-100"></div>
 
       {/* Hero Text */}
       <div
