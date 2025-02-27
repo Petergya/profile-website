@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
           {texts[currentIndex].subtitle}
         </div>
-        <p className="text-white w-80 font-semibold text-lg mt-2">
+        <p className="text-white w-80 font-semibold text-lg mt-2 font-TW Cen MT">
           {texts[currentIndex].description}
         </p>
       </div>

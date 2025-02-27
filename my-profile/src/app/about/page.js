@@ -18,7 +18,8 @@ const AboutUs = () => {
 
       {/* Right Section: Text Content */}
       <div className="w-full md:w-1/2 mt-6 md:mt-0">
-        <h2 className="text-5xl font-bold text-gray-900 uppercase">About Us</h2>
+        <h2 className="font-semibold text-gray-800 text-3xl text-center my-5 mb-5">About Us</h2>
+        <div className="w-16 h-1 bg-gray-900 mx-auto mt-3"></div>
         <p className="text-gray-700  mt-4">
         Our growth and success at METALLIZ GROUP, built on experience,
 spanning decades of international commodity trade, is driven by the
