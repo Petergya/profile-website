@@ -1,4 +1,4 @@
-import Hero from "@/landingpage/hero";
+import Producthero from "@/ourproducts/producthero";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -50,7 +50,7 @@ const products = [
 const ProductSection = () => {
   return (
     <div>
-      <Hero />
+      <Producthero />
        <div className="w-full py-12 bg-gray-100 items-center ">
         <h1 className=" font-semibold text-gray-800 text-3xl text-center my-5 mb-5">Our portfolio of specialty minerals:</h1>
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between">

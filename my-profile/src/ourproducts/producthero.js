@@ -5,8 +5,8 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/images/image3.jpg",
-  // "/images/heroservice1.jpg",
+  "/images/image1.jpg",
+  "/images/image2.jpg",
   
 ];
 
@@ -28,7 +28,7 @@ const texts = [
   }
 ];
 
-const Heroservice = () => {
+const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState("opacity-100 translate-x-0"); // Make text visible initially
 
@@ -46,13 +46,11 @@ const Heroservice = () => {
 
   return (
     <div
-      
       className="w-full  md:h-[100vh] bg-cover object-cover mt-20 transition-all duration-1000 overflow-hidden relative"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
-     
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 bg-opacity-60"></div>
+      <div className="absolute inset-0 bg-black/60 bg-opacity-40"></div>
 
       {/* Hero Text */}
       <div
@@ -72,4 +70,4 @@ const Heroservice = () => {
   );
 };
 
-export default Heroservice;
+export default Hero;

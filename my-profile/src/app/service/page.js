@@ -31,7 +31,7 @@ export default function ServiceSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 20000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
