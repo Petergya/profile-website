@@ -1,12 +1,10 @@
-
-
-
 "use client";
 import React, { useState, useEffect } from "react";
 
 const images = [
   "/images/image1.jpg",
   "/images/product.jpg",
+  "/images/image1.jpg",
   
 ];
 
@@ -28,9 +26,9 @@ const texts = [
   }
 ];
 
-const Hero = () => {
+const productHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState("opacity-100 translate-x-0"); // Make text visible initially
+  const [animate, setAnimate] = useState("opacity-100 translate-x-0"); 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,11 +44,11 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full  md:h-[100vh] bg-cover object-cover mt-20 transition-all duration-1000 overflow-hidden relative"
+      className="w-full h-[60vh] md:h-[100vh] bg-cover mt-20 transition-all duration-1000 overflow-hidden relative"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0  bg-opacity-40"></div>
+      <div className="absolute inset-0  bg-opacity-100"></div>
 
       {/* Hero Text */}
       <div
@@ -62,7 +60,7 @@ const Hero = () => {
         <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
           {texts[currentIndex].subtitle}
         </div>
-        <p className="text-white w-80 font-semibold text-lg mt-2">
+        <p className="text-white w-80 font-semibold text-lg mt-2 font-TW Cen MT">
           {texts[currentIndex].description}
         </p>
       </div>
@@ -70,4 +68,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default productHero;
