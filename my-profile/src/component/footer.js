@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Left Section - Logo & Copyright */}
         <div className="flex justify-around items-center space-x-6 text-center md:text-left mb-6 md:mb-0">
-          <Image src="/images/logo.jpg" alt="Suizze Allianz Group" width={80} height={80} />
+          <Image src="/images/logo1.jpg" alt="Suizze Allianz Group" width={80} height={80} />
           
           <div className="text-center md:text-left text-sm space-y-2">
             <p className="font-extrabold">METALLIZ GROUP (UK)</p>
@@ -44,7 +44,7 @@ const Footer = () => {
        
          <div className="flex flex-col space-y-2 text-center md:text-left">
           <a href="#" className="hover:text-gray-400 font-bold">NAVIGATION</a>
-          <a href="#" className="hover:text-gray-400">HMOE</a>
+          <a href="#" className="hover:text-gray-400">HOME</a>
           <a href="#" className="hover:text-gray-400">PRODUCTS</a>
           <a href="#" className="hover:text-gray-400">SERVICES</a>
           <a href="#" className="hover:text-gray-400">ABOUT US</a>
