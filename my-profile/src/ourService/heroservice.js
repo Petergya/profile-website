@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/images/image3.jpg",
-  "/images/image3.jpg",
-  "/images/image3.jpg",
+  "/images/serviceimage.jpg",
+  "/images/serviceimage.jpg",
+  "/images/serviceimage.jpg",
 ];
 
 const texts = [
