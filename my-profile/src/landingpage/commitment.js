@@ -6,7 +6,7 @@ const Commitment = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center gap-8">
         {/* Right Content */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-2xl font-bold ">Our Commitment to Quality</h3>
+          <h3 className="font-semibold text-gray-800 text-3xl text-center my-5 mb-5">Our Commitment to Quality</h3>
 
           <p className="text-gray-600 ">
             In today&#39;s technology-driven landscape, critical minerals serve
