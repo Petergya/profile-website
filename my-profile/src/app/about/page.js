@@ -21,26 +21,26 @@ const AboutUs = () => {
           About Us
         </h2>
         <div className="w-16 h-1 bg-gray-900 mx-auto mt-3"></div>
-        <p className="text-gray-700  mt-4">
-          Our growth and success at METALLIZ GROUP, built on experience,
+        <p className="text-gray-700  mt-4 font-twcen">
+          Our growth and success at <b className="font-perpetua">METALLIZ GROUP</b>, built on experience,
           spanning decades of international commodity trade, is driven by the
           visionary leadership of our founders, bound together with our
           unwavering commitment to excellence.
         </p>
-        <p className="text-gray-700 mt-4">
+        <p className="text-gray-700 mt-4 font-twcen">
           As a proficient and experienced procurement specialist in minerals and
           metals, we are dedicated to meeting the evolving needs of our clients,
           setting new standards in the industry.
         </p>
-        <p className="text-gray-700 mt-4">
+        <p className="text-gray-700 mt-4 font-twcen">
           The increasing global demand for innovative technologies, requires a
           reliable and efficient supply chain. Our clients expect not only top-
           grade products but also a seamless and flawless transactional
-          experience. METALLIZ GROUP is committed to delivering exceptional
+          experience. <b className="font-perpetua">METALLIZ GROUP</b> is committed to delivering exceptional
           results through streamlined processes and a customer- centric
           approach.
         </p>
-        <p className="text-gray-700 mt-4">
+        <p className="text-gray-700 mt-4 font-twcen">
           Our core values are built around customer satisfaction, and we strive
           to empower our partners to achieve their goals by providing:
           <br />
