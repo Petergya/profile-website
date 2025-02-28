@@ -5,13 +5,13 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="flex flex-col md:flex-row  items-center justify-between px-6 md:px-20 gap-8 py-12 mt-20 bg-gray-100/60">
-      <div className="w-full md:w-1/2 relative">
+      <div className="w-full md:w-1/2 relative ">
         <Image
           src="/images/about.jpg"
           alt="About Us"
           width={800}
           height={400}
-          className="rounded-md h-[500px] w-[900px]"
+          className="rounded-md h-[538px] w-[900px]"
         />
       </div>
 
