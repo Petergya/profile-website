@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -7,7 +8,16 @@ const Footer = () => {
         
         {/* Logo and Address Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 text-center md:text-left w-full md:w-auto">
-          <Image src="/images/logo1.jpg" alt="Suizze Allianz Group" width={80} height={80} />
+          {/* <Image src="/images/logo1.jpg" alt="Suizze Allianz Group" width={80} height={80} /> */}
+          <Link href="/" passHref>
+  <Image 
+    src="/images/logo1.jpg" 
+    alt="Logo" 
+    width={80} 
+    height={80} 
+    className="h-auto object-cover cursor-pointer" 
+  />
+</Link>
           <div className="text-center md:text-left text-sm space-y-2">
             <p className="font-extrabold text-lg font-perpetua">METALLIZ GROUP (UK)</p>
             <p>27 Old Gloucester Street <br />WCIN 3AX</p>

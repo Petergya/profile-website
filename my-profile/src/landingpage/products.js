@@ -55,7 +55,7 @@ const ProductSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
   {products.map((product, index) => (
-    <div key={`${product.id}-${index}`} className="bg-white shadow-lg p-4">
+    <div key={`${product.id}-${index}`} className="bg-white shadow-lg p-4 rounded-lg transition-transform transform duration-1000 ease-in-out hover:scale-105">
       <Image
         src={product.image}
         alt={product.title}

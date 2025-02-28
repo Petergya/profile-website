@@ -66,7 +66,7 @@ const ProductSection = () => {
             {products.map((product, index) => (
               <div
                 key={`${product.id}-${index}`}
-                className="bg-white shadow-lg p-4 rounded-lg transition-transform transform hover:scale-105"
+                className="bg-white shadow-lg p-4 rounded-lg transition-transform transform duration-1000 ease-in-out hover:scale-105"
               >
                 <Image
                   src={product.image}
