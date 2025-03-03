@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        twcen: ['"TW Cen MT"', 'sans-serif'], 
+        twcen: ['"TW Cen MT"', ], 
         perpetua: ['"Perpetua"', 'serif'], 
       },
     },
