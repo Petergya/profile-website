@@ -8,7 +8,7 @@ const Commitment = () => {
         <div className="w-full md:w-1/2">
           <h3 className="font-semibold text-gray-800 text-3xl text-center my-5 mb-5">Our Commitment to Quality</h3>
 
-          <p className="text-gray-600 ">
+          <p className="text-gray-600 text-lg font-twcen ">
             In today&#39;s technology-driven landscape, critical minerals serve
             as the foundation for cutting-edge innovations. We guarantee that
             our products meet the highest quality standards. For added

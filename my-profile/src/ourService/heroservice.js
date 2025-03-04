@@ -59,7 +59,7 @@ const Servicehero = () => {
         <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
           {texts[currentIndex].title}
         </div>
-        <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
+        <div className="bg-black text-white px-4 py-2 font-semibold mt-1 w-max font-twcen">
           {texts[currentIndex].subtitle}
         </div>
         <p className="text-white w-80 font-semibold text-lg mt-2 font-TW Cen MT">

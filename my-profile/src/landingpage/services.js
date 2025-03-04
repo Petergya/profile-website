@@ -21,7 +21,7 @@ const ServiceSection = () => {
         <div className="w-full md:w-1/2">
           <h3 className="text-2xl font-bold ">Geological Asset + Resource Consultancy</h3>
           <h1 className="font-semibold text-gray-800 mt-4 ">Unlocking Global Critical Mineral Solutions </h1>
-          <p className="text-gray-600  ">
+          <p className="text-gray-600 text-lg font-twcen  ">
          In partnership with an EU-funded project, our Geological Asset/Resource Consultancy 
           service offers a comprehensive solution for mining asset acquisition on a global scale. 
           Fusing the power of Hyperspectral imaging and proprietor software, we provide reliable 

@@ -1,6 +1,3 @@
-
-
-
 "use client";
 import React, { useState, useEffect } from "react";
 
@@ -30,7 +27,7 @@ const texts = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animate, setAnimate] = useState("opacity-100 translate-x-0"); // Make text visible initially
+  const [animate, setAnimate] = useState("opacity-100 translate-x-0"); 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,7 +56,7 @@ const Hero = () => {
         <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
           {texts[currentIndex].title}
         </div>
-        <div className="bg-black text-white px-4 py-2 text-lg mt-1 w-max">
+        <div className="bg-black text-white px-4 py-2  mt-1 w-max font-twcen font-semibold ">
           {texts[currentIndex].subtitle}
         </div>
         <p className="text-white w-80 font-semibold text-lg mt-2 font-TW Cen MT">

@@ -2,15 +2,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FiMenu, FiX } from "react-icons/fi"; // Importing icons
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(""); // State to track active link
+  const [activeLink, setActiveLink] = useState(""); 
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsOpen(false); // Close the mobile menu on link click
+    setIsOpen(false); 
   };
 
   return (

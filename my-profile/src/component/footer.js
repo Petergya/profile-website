@@ -18,7 +18,7 @@ const Footer = () => {
     className="h-auto object-cover cursor-pointer" 
   />
 </Link>
-          <div className="text-center md:text-left text-sm space-y-2">
+          <div className="text-center md:text-left text-sm space-y-2 font-twcen">
             <p className="font-extrabold text-lg font-perpetua">METALLIZ GROUP (UK)</p>
             <p>27 Old Gloucester Street <br />WCIN 3AX</p>
             <p>London, United Kingdom.</p>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* Products Section */}
-        <div className="flex flex-col space-y-2 text-center md:text-left w-full md:w-auto">
+        <div className="flex flex-col space-y-2 text-center md:text-left w-full md:w-auto font-twcen">
           <p className="font-bold text-lg">PRODUCTS</p>
           {["BERYLLIUM", "TANTALUM", "NIOBIUM", "COPPER", "TUNGSTEN", "TITANIUM DIOXIDE"].map((product) => (
             <a key={product} href="#" className="hover:text-gray-400 transition">
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Section */}
-        <div className="flex flex-col space-y-2 text-center md:text-left w-full md:w-auto">
+        <div className="flex flex-col space-y-2 text-center md:text-left w-full md:w-auto font-twcen">
           <p className="font-bold text-lg">NAVIGATION</p>
           {["HOME", "PRODUCTS", "SERVICES", "ABOUT US", "CONTACT"].map((navItem) => (
             <a key={navItem} href="#" className="hover:text-gray-400 transition">
