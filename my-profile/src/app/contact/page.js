@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-8">
+    <div className="mt-8 font-twcen">
       <div>
         <Image
           src="/images/contact1.jpg"
@@ -101,10 +101,10 @@ const Contact = () => {
           </div>
 
           {/* Contact Info Section */}
-          <div className="md:text-left text-center">
+          <div className="md:text-left text-center font-twcen">
             <div className="w-full md:w-48 mx-auto md:mx-0">
               <h3 className="font-bold bg-gray-700 p-3 text-white">
-                United Kingdom
+                UNITED KINGDOM
               </h3>
             </div>
             <p className="text-sm mt-2">27 Old Gloucester Street</p>
