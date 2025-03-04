@@ -37,7 +37,7 @@ export default function ServiceSection() {
         <p className="text-lg font-semibold mt-3">
           Geological Asset/Resource Consultancy
         </p>
-        <p className="text-gray-500 max-w-2xl mx-auto mt-3">
+        <p className="text-gray-500 font-twcen text-lg max-w-2xl mx-auto mt-3">
           Unlocking Mining Potential with Cutting-Edge Technology.
         </p>
       </motion.div>
@@ -70,12 +70,12 @@ export default function ServiceSection() {
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">
             Our Expertise
           </h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 text-lg font-twcen leading-relaxed">
             Our partnership with an EU-funded project provides access to
             cutting-edge Hyperspectral imaging technology. This innovative
             approach enables us to:
           </p>
-          <ul className="list-disc list-inside text-gray-700 mt-4">
+          <ul className="list-disc list-inside text-gray-700 font-twcen text-lg mt-4 ">
             <li>Accurately identify mineral types and compositions</li>
             <li>Quantify mineral volumes</li>
             <li>Detect subtle changes in mineralogy</li>
@@ -84,7 +84,7 @@ export default function ServiceSection() {
               grading
             </li>
           </ul>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-700 font-twcen text-lg">
             This technology empowers our team to provide detailed, data-driven
             insights, reducing uncertainty and risk in mining asset acquisition.
           </p>
@@ -101,7 +101,7 @@ export default function ServiceSection() {
         <h3 className="text-2xl font-semibold text-gray-800 mb-6">
           Benefits of Our Service
         </h3>
-        <ul className="list-disc list-inside text-gray-700">
+        <ul className="list-disc list-inside text-gray-700 font-twcen text-lg">
           <li>Unparalleled accuracy in mineral resource assessments</li>
           <li>
             Comprehensive evaluations covering all critical aspects of mining
@@ -117,13 +117,13 @@ export default function ServiceSection() {
           {" "}
           Matchmaking: Client + Buyer/Investor{" "}
         </h3>
-        <p className="text-gray-700 leading-relaxed mt-4">
+        <p className="text-gray-700 leading-relaxed mt-4 font-twcen text-lg">
           Our goal is not just to assess mining assets, but to facilitate
           successful transactions. We leverage our deep understanding of the
           geological, regulatory, financial, and social landscapes of the mining
           industry to connect clients with capable and outstanding investors.
         </p>
-        <p className="text-gray-700 mt-4">
+        <p className="text-gray-700 mt-4 font-twcen text-lg">
           Contact us today to discuss your project requirements and learn more
           about our innovative approach to unlocking mining potential.
         </p>

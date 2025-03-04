@@ -64,7 +64,7 @@ const ProductSection = () => {
         className="w-full object-cover"
       />
       <h3 className="text-lg font-bold mt-4">{product.title}</h3>
-      <p className="text-gray-600 mt-2 text-sm">{product.description}</p>
+      <p className="text-gray-600 mt-2 text-sm font-twcen">{product.description}</p>
       {/* <button className="mt-4 flex p-2 bg-gray-200 items-center text-gray-500 font-semibold hover:underline">
         READ MORE <FaArrowRight className="ml-2 text-xs text-red-500" />
       </button> */}

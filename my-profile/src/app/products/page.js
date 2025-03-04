@@ -170,11 +170,11 @@ const ProductSection = () => {
                   className="w-full object-cover rounded-lg"
                 />
                 <h3 className="text-lg font-bold mt-4">{product.title}</h3>
-                <p className="text-gray-600 mt-2 text-sm">
+                <p className="text-gray-600 mt-2 text-sm font-twcen ">
                   {product.description}
                 </p>
                 {product.properties && (
-                  <ul className="mt-2 text-gray-600 text-sm">
+                  <ul className="mt-2 text-gray-600 text-sm font-twcen">
                     <strong>Properties:</strong>
                     {product.properties.map((prop, i) => (
                       <li key={i}>- {prop}</li>
@@ -182,7 +182,7 @@ const ProductSection = () => {
                   </ul>
                 )}
                 {product.productForms && (
-                  <ul className="mt-2 text-gray-600 text-sm">
+                  <ul className="mt-2 text-gray-600 text-sm font-twcen">
                     <strong>Product Forms:</strong>
                     {product.productForms.map((form, i) => (
                       <li key={i}>- {form}</li>
