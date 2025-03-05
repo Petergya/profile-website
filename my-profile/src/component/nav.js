@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="w-full bg-white top-0 left-0 right-0 z-50 p-4 fixed shadow-md">
       <div className="container mx-auto flex items-center justify-between">
 
-        {/* Logo Section */}
+      
         <div className="flex items-center gap-2">
 
           <Link href="/" passHref>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <h1 className="text-xl font-bold whitespace-nowrap font-perpetua">METALLIZ GROUP (UK)</h1>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* This is Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <Link
             href="/"
@@ -71,7 +71,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger Menu - Mobile */}
+        {/* This is Hamburger Menu - Mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
             {isOpen ? <FiX size={30} /> : <FiMenu size={30} />}
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* This Mobile Navigation Menu  */}
       <div
         className={`${isOpen ? "block" : "hidden"
           } absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden`}

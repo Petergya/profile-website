@@ -11,12 +11,12 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -58,7 +58,7 @@ const Contact = () => {
           GET A QUOTE
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Form Section */}
+        
           <div className="md:col-span-2 space-y-4">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -100,7 +100,7 @@ const Contact = () => {
             {success && <p className="text-sm text-green-600">{success}</p>}
           </div>
 
-          {/* Contact Info Section */}
+        
           <div className="md:text-left text-center font-twcen">
             <div className="w-full md:w-48 mx-auto md:mx-0">
               <h3 className="font-bold bg-gray-700 p-3 text-white">

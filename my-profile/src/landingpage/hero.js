@@ -46,10 +46,10 @@ const Hero = () => {
       className="w-full h-[60vh] md:h-[100vh] bg-cover mt-20 transition-all duration-1000 overflow-hidden relative"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
-      {/* Overlay */}
+      
       <div className="absolute inset-0  bg-opacity-100"></div>
 
-      {/* Hero Text */}
+      
       <div
         className={`absolute top-3/4 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
       >

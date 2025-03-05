@@ -6,7 +6,7 @@ const ServiceSection = () => {
     <div className="w-full bg-gray-100 py-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center gap-8">
         
-        {/* Left Image */}
+        
         <div className="w-full md:w-1/2">
           <Image
             src="/images/service.jpg"
@@ -17,7 +17,7 @@ const ServiceSection = () => {
           />
         </div>
 
-        {/* Right Content */}
+      
         <div className="w-full md:w-1/2">
           <h3 className="text-2xl font-bold ">Geological Asset + Resource Consultancy</h3>
           <h1 className="font-semibold text-gray-800 mt-4 ">Unlocking Global Critical Mineral Solutions </h1>

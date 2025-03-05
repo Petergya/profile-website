@@ -2,7 +2,7 @@ import Producthero from "@/ourproducts/producthero";
 import Image from "next/image";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-// const products = [
+
 
 const products = [
   {
@@ -148,12 +148,12 @@ const ProductSection = () => {
     <div>
       <Producthero />
       <div className="w-full py-12 bg-gray-100 items-center">
-      <h2 className="font-semibold text-gray-800 text-3xl text-center my-5 mb-5 tracking-wide">
+        <h2 className="font-semibold text-gray-800 text-3xl text-center my-5 mb-5 tracking-wide">
           OUR PRODUCTS
         </h2>
         <div className="w-16 h-1 bg-gray-900 mx-auto mt-3"></div>
 
-       
+
         <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between mt-6">
           <FaArrowLeft className="text-gray-500 text-2xl cursor-pointer hover:text-black transition" />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

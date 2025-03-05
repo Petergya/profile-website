@@ -21,7 +21,7 @@ const fadeInRight = {
 export default function ServiceSection() {
   return (
     <section className="bg-white pt-0 pb-16 px-6">
-      {/* Hero Service for all screen sizes */}
+
       <Heroservice />
 
       <motion.div
@@ -42,9 +42,9 @@ export default function ServiceSection() {
         </p>
       </motion.div>
 
-      {/* Image and Text Layout */}
+
       <div className="mt-16 flex flex-col lg:flex-row items-center gap-10 max-w-6xl mx-auto">
-        {/* Image Section */}
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -60,7 +60,7 @@ export default function ServiceSection() {
           />
         </motion.div>
 
-        {/* Text Section */}
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -91,7 +91,7 @@ export default function ServiceSection() {
         </motion.div>
       </div>
 
-      {/* Additional Details */}
+
       <motion.div
         initial="hidden"
         animate="visible"
