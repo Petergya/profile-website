@@ -137,7 +137,7 @@ const products = [
       "TiO₂ pigment (coated and uncoated)",
       "TiO₂ masterbatches (plastics and coatings)",
       "TiO₂ dispersions (aqueous and non-aqueous)",
-      "Ilmenite sand /ore (TiO₂ 50% - 65%)"
+      "Ilmenite  (TiO₂ 50% - 65%)"
     ]
   }
 ];
