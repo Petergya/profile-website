@@ -15,7 +15,7 @@ const Footer = () => {
               alt="Logo"
               width={80}
               height={80}
-              className="h-auto object-cover cursor-pointer"
+              className="h-auto object-cover cursor-pointer mt-5 "
             />
           </Link>
           <div className="text-center md:text-left text-sm space-y-2 font-twcen">

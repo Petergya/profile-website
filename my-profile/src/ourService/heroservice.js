@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/images/serviceimage.jpg",
-  "/images/serviceimage.jpg",
+ "/images/serviceimage.jpg",
+   "/images/serviceimage.jpg",
   "/images/serviceimage.jpg",
 ];
 
@@ -11,24 +11,21 @@ const texts = [
   {
     title: "Pioneering Mineral Solutions",
     subtitle: "Innovative Exploration & Sustainable Mining",
-    description:
-      "Leading the way in critical mineral extraction with cutting-edge geological expertise.",
+    description: "Leading the way in critical mineral extraction with cutting-edge geological expertise."
   },
   {
     title: "Global Mining Consultancy",
     subtitle: "Expert Advice for Smart Investments",
-    description:
-      "Providing in-depth analysis and consultation for strategic mining asset acquisition.",
+    description: "Providing in-depth analysis and consultation for strategic mining asset acquisition."
   },
   {
     title: "Sustainable Resource Management",
     subtitle: "Ethical and Eco-friendly Mining Practices",
-    description:
-      "Committed to responsible mining solutions for a greener future.",
-  },
+    description: "Committed to responsible mining solutions for a greener future."
+  }
 ];
 
-const Servicehero = () => {
+const  Servicehero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animate, setAnimate] = useState("opacity-100 translate-x-0");
 
@@ -45,29 +42,45 @@ const Servicehero = () => {
   }, []);
 
   return (
-    <div
-      className="w-full h-[60vh] md:h-[100vh] bg-cover mt-20 transition-all duration-1000 overflow-hidden relative"
-      style={{ backgroundImage: `url(${images[currentIndex]})` }}
-    >
-      
-      <div className="absolute inset-0  bg-opacity-100"></div>
+    <div className="relative w-full h-[100vh] lg:mt-24  bottom-0 top-0 overflow-hidden">
 
-      
+      <div className="relative w-full h-screen  ">
+        <img
+          src={images[currentIndex]}
+          alt="Hero Image"
+          className="absolute inset-0 w-full h-full object-contain lg:object-cover transition-opacity duration-1000"
+        />
+      </div>
+
+
+
+
+
+      <div className="absolute  inset-0   ">
+
       <div
-        className={`absolute top-3/4 left-20 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
+        className={`absolute top-1/2 left-5 md:left-20 mt-6 transform -translate-y-1/2 transition-all duration-1000 ${animate}`}
       >
-        <div className="bg-red-600 text-white px-4 py-2 text-sm font-bold w-max">
+        <div className="bg-red-600 text-white px-4 py-2 text-xs sm:text-sm md:text-base font-bold w-max">
           {texts[currentIndex].title}
         </div>
-        <div className="bg-black text-white px-4 py-2 font-semibold mt-1 w-max font-twcen">
+        <div className="bg-black text-white px-4 py-2 mt-1 w-max font-semibold text-xs sm:text-sm md:text-base">
           {texts[currentIndex].subtitle}
         </div>
-        <p className="text-white w-80 font-semibold text-lg mt-2 font-TW Cen MT">
+        <p className="text-white w-48 sm:w-60 md:w-80 font-semibold text-xs sm:text-sm md:text-lg mt-2">
           {texts[currentIndex].description}
         </p>
       </div>
+      </div>
     </div>
+
   );
 };
-
 export default Servicehero;
+
+
+
+
+
+
+

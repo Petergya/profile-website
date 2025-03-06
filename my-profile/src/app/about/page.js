@@ -4,28 +4,26 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="mt-28 bg-gray-100/60 py-12 px-6 md:px-20">
-
+    <section className="mt-24 bg-gray-100/60 py-12 px-6 sm:px-12 md:px-20">
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-gray-800 uppercase">About Us</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 uppercase">About Us</h2>
         <div className="w-16 h-1 bg-gray-900 mx-auto mt-3"></div>
       </div>
 
-      
-      <div className="flex flex-col md:flex-row items-center gap-12">
+      <div className="flex flex-col lg:flex-row items-center gap-12">
         
-        <div className="w-full md:w-1/2 flex justify-center mt-4">
+        <div className="w-full lg:w-1/2 flex justify-center mt-4">
           <Image
             src="/images/about.jpg"
             alt="About Us"
             width={800}
             height={400}
-            className="rounded-md shadow-lg h-[518px] w-[900px]"
+            className="rounded-md shadow-lg w-full max-w-[900px] h-auto object-cover"
           />
         </div>
 
-        
-        <div className="w-full md:w-1/2 text-gray-700 text-lg   mt-4 font-twcen">
+      
+        <div className="w-full lg:w-1/2 text-gray-700 text-lg mt-4 font-twcen">
           <p>
             Our growth and success at <b className="font-perpetua">METALLIZ GROUP</b>, built on experience
             spanning decades of international commodity trade, is driven by the
